@@ -20,10 +20,10 @@
 		//Getting the data and put it in an assosiative Array
 	if ($password == $row["password"]) {
 		$_SESSION['user']=$username;
-    		echo "Welcome $username <a href='secret.php'>Secret</a>";
+    		echo "Welcome $username <br><a href='secret.php'>Secret</a><br><a href='index.php'>Zur&uuml;ck Zur Startseite</a>";
 	}
 	else {
- 	   echo "Error reading database: " . $conn->error;
+ 	   echo "Falsches Passwort oder falscher Username";
 	}
 	//Checking if the password is right
 	mysqli_close($conn);

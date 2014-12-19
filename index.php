@@ -20,6 +20,15 @@
     <div id="logo"></div>
 
     <nav id="navheader">
+        <?php
+        session_start();
+        if (isset($_SESSION['user'])) {
+            echo("<div>Du Bist eingeloggt als ".$_SESSION['user']."</div>"); 
+        }
+        else{
+            echo "Nicht eingeloggt";
+        }
+        ?>
           <!--  <a href="" id="link">About me</a>
             <a href="" id="link">Shop</a>
             <a href="" id="link">Contact</a>
