@@ -1,0 +1,63 @@
+.forms{
+    float: right;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7);
+}
+.handle{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 70px;
+    border-radius: 2px;
+}
+.handle:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+#login{
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -op-transition: max-heigh 0.4s;
+    transition: max-height 0.4s;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    position: absolute;
+    width: 229px;
+}
+#register{
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -op-transition: max-heigh 0.4s;
+    transition: max-height 0.4s;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    position: absolute;
+    width: 229px;
+}
+.hidden{
+    max-height: 0;
+}
+.showing{
+    max-height: 20em;
+}
+div div div form {
+    text-align: center;
+    margin: 0 auto;
+
+}
+.button{
+    height: 20px;
+    width: 100%;
+}
+.input{
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+paper-input-decorator /deep/ .floating-label .label-text {
+    color: orange;
+    background-color: green;
+}
+paper-input-decorator /deep/ .focused-underline {
+    background-color: #cccccc;
+}
