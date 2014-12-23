@@ -1,8 +1,11 @@
 function toggleClass (el){
-    if(el.className == "hidden"){
-        el.className = "showing";
-    }
-    else {
-        el.className = "hidden";
+ 
+    switch(el.className){
+    	case "hidden":
+    		el.className = "showing";
+    		break;
+    	case "showing":
+    		el.className = "hidden";
+    		break;
     }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/content.css">
     <script src="scripts/main.js"></script>
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="elements/paper-button-submit.html">
@@ -16,25 +17,27 @@
 </head>
 
 <body fullbleed>
-<div id="header">
-    <div id="logo"></div>
+<div class="parallax">
+<div class="parallax__layer parallax__layer--back">
+</div>
+<div class="parallax__layer parallax__layer--middle">
+    <div class="background">
+    <h1 id="title">Test Website</h1>
 
-    <nav id="navheader">
-        <?php
-        session_start();
-        if (isset($_SESSION['user'])) {
-            echo("<div>Du Bist eingeloggt als ".$_SESSION['user']."</div>"); 
-        }
-        else{
-            echo "Nicht eingeloggt";
-        }
-        ?>
-          <!--  <a href="" id="link">About me</a>
-            <a href="" id="link">Shop</a>
-            <a href="" id="link">Contact</a>
-            -->
-        <div class="forms">
-            <div class="login">
+    <p id="sub">Cool // Stuff // I know</p>
+    </div>
+</div>
+
+<div class="parallax__layer parallax__layer--base">
+    <div id="logo"></div>
+    <nav id="shopnav">
+        <ul>
+            <li><a href="#" id="shop">Unicorns</a></li>
+            <li><a href="#" id="shop">Two</a></li>
+            <li><a href="#" id="shop">Three</a></li>
+            <li><a href="#" id="shop">Four</a></li>
+            <li class=""></li>
+            <li><div class="login">
                 <div class="handle" onclick="toggleClass(login)">Login</div>
                 <div class="hidden" id="login">
                     <form action="login.php" method="post">
@@ -47,10 +50,8 @@
                         <button type="submit" is="paper-button-submit">Login</button><br><br>
                     </form>
                 </div>
-            </div>
-        
-
-            <div class="register">
+            </div></li>
+            <li><div class="register">
                 <div class="handle" onclick="toggleClass(register)">Registrieren</div>
                 <div class="hidden" id="register">
                     <form action="register.php" method="post">
@@ -66,22 +67,11 @@
                         <button type="submit" is="paper-button-submit">Registrieren</button><br><br>
                     </form>
                 </div>
-            </div>
-        </div>
-
+            </div></li>
+        </ul>
     </nav>
 
-    <h1 id="title">Test Website</h1>
-
-    <p id="sub">Cool // Stuff // I know</p>
-
-    <nav id="shopnav">
-        <a href="" id="shop">Unicorns</a>
-        <a href="" id="shop">Two</a>
-        <a href="" id="shop">Three</a>
-        <a href="" id="shop">Four</a>
-    </nav>
-</div>
+<div class="content">
 
 <!--<div class="forms">
     <div class="login">
@@ -136,7 +126,6 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
 
-
 <div id="footer">
     <div id="logofooter"></div>
 
@@ -148,6 +137,9 @@
         </nav>
         <p id="copyright">All Content copyright 2014</p>
     </div>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
