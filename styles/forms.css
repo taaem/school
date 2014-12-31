@@ -20,7 +20,7 @@
     background-color: rgba(0,0,0,0.7);
     border-radius: 6px;
     position: absolute;
-    width: 180px;
+    width: 132px;
 	max-height: 0;
 }
 #register{
@@ -32,13 +32,10 @@
     background-color: rgba(0,0,0,0.7);
     border-radius: 6px;
     position: absolute;
-    width: 337px;
+    width: 226px;
 	max-height: 0;
 }
-.handle:hover + #login{
-	max-height: 20em;
-}
-#login:hover{
+.handle:hover + #login, #login:hover{
 	max-height: 20em;
 }
 div div div form {
@@ -62,9 +59,6 @@ paper-input-decorator /deep/ .floating-label .label-text {
 paper-input-decorator /deep/ .focused-underline {
     background-color: #cccccc;
 }
-.handle:hover + #register{
-	max-height: 20em;
-}
-#register:hover{
+.handle:hover + #register, #register:hover{
 	max-height: 20em;
 }
