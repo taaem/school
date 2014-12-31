@@ -21,7 +21,7 @@
 session_start();
 if (isset($_SESSION['user'])){
     $classname = "loggedin";
-    $userclass = "user";
+    $userclass = "";
 }else{
     $classname = "";
     $userclass = "loggedout";
@@ -46,15 +46,15 @@ if (isset($_SESSION['user'])){
             <li><a href="#" id="shop">Two</a></li>
             <li><a href="#" id="shop">Three</a></li>
             <li><a href="#" id="shop">Four</a></li>
-            <li class="<?php echo $userclass; ?>">
+            <li>
                 <div class="<?php echo $userclass; ?>"><a href="#">Welcome <?php echo $_SESSION['user']; ?></a></div>
             </li>
-            <li class="<?php echo $userclass; ?>">
+            <li>
                 <div class="<?php echo $userclass; ?>"><a href="logout.php">Logout</a></div>
             </li>
             <li><div class="<?php echo $classname; ?>">
-                <div class="handle" onclick="toggleClass(login)">Login</div>
-                <div class="hidden" id="login">
+                <div class="handle">Login</div>
+                <div class="login" id="login">
                     <form action="login.php" method="post">
                         <paper-input-decorator label="Username" floatingLabel class="input">
                             <input type="Text" name="username">
@@ -67,7 +67,7 @@ if (isset($_SESSION['user'])){
                 </div>
             </div></li>
             <li><div class="<?php echo $classname; ?>">
-                <div class="handle" onclick="toggleClass(register)">Registrieren</div>
+                <div class="handle">Registrieren</div>
                 <div class="hidden" id="register">
                     <form action="register.php" method="post">
                         <paper-input-decorator label="Username" class="input" floatingLabel>
