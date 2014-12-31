@@ -71,3 +71,9 @@
 #shopnav ul li:hover{
     background-color: rgba(0,0,0,0.4);
 }
+.loggedin{
+    display: none;
+}
+.loggedout{
+    display: none;
+}

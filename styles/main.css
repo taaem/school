@@ -23,6 +23,7 @@ body{
   transform: translateZ(-10px) scale(11);
   background: url(../pictures/background.jpg) center center;
   background-size: cover;
+  
 }
 .parallax__layer--middle{
 	transform: translateZ(-5px) scale(6);

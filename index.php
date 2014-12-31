@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
+    <meta charset="UTF-8">
     <title>Test</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -17,6 +17,16 @@
 </head>
 
 <body fullbleed>
+<?php
+session_start();
+if (isset($_SESSION['user'])){
+    $classname = "loggedin";
+    $userclass = "user";
+}else{
+    $classname = "";
+    $userclass = "loggedout";
+}
+?>
 <div class="parallax">
 <div class="parallax__layer parallax__layer--back">
 </div>
@@ -36,8 +46,13 @@
             <li><a href="#" id="shop">Two</a></li>
             <li><a href="#" id="shop">Three</a></li>
             <li><a href="#" id="shop">Four</a></li>
-            <li class=""></li>
-            <li><div class="login">
+            <li class="<?php echo $userclass; ?>">
+                <div class="<?php echo $userclass; ?>"><a href="#">Welcome <?php echo $_SESSION['user']; ?></a></div>
+            </li>
+            <li class="<?php echo $userclass; ?>">
+                <div class="<?php echo $userclass; ?>"><a href="logout.php">Logout</a></div>
+            </li>
+            <li><div class="<?php echo $classname; ?>">
                 <div class="handle" onclick="toggleClass(login)">Login</div>
                 <div class="hidden" id="login">
                     <form action="login.php" method="post">
@@ -51,7 +66,7 @@
                     </form>
                 </div>
             </div></li>
-            <li><div class="register">
+            <li><div class="<?php echo $classname; ?>">
                 <div class="handle" onclick="toggleClass(register)">Registrieren</div>
                 <div class="hidden" id="register">
                     <form action="register.php" method="post">

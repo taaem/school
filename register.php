@@ -1,10 +1,4 @@
-<html>
-<head>
-	<title>Registrieren</title>
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-</head>
-<body>
-	<?php
+<?php
 	session_start();
 	require 'inc/db.inc.php';
 		//Connect to the DB
@@ -28,7 +22,7 @@
 			//Query which will be send to the DB
 		if ($conn->query($query) === TRUE) {
 			$_SESSION['user']=$user;
-    			echo "Erfolgreich registriert <br> <a href='secret.php'>Secret</a><br><a href='index.php'>Zur&uuml;ck Zur Startseite</a>";
+    		header("Location:index.php");
 		}
 		else {
    			echo $conn->error;
@@ -39,6 +33,4 @@
 		echo "Name ist schon vergeben!";
 	}
 	mysqli_close($conn);
-	?>
-</body>
-</html>
+?>
