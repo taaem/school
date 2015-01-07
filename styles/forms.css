@@ -9,7 +9,7 @@
     padding: 10px 30px 10px 30px;
 }
 .handle:hover{
-    background-color: rgba(0,0,0,0.4);
+    color: black;
 }
 #login{
     overflow: hidden;

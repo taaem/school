@@ -41,7 +41,8 @@
 }
 
 #shop:hover{
-    color: rgba(0,0,0,0.4);
+    color: black;
+    background-color: white;
 }
 
 #shopnav ul{
@@ -69,7 +70,8 @@
 }
 
 #shopnav ul li:hover{
-    background-color: rgba(0,0,0,0.4);
+    color: black;
+    background-color: white;
 }
 .loggedin{
     display: none;

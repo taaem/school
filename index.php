@@ -87,60 +87,7 @@ if (isset($_SESSION['user'])){
     </nav>
 
 <div class="content">
-
-<!--<div class="forms">
-    <div class="login">
-        <div class="handle" onclick="toggleClass(login)">Login</div>
-        <div class="hidden" id="login">
-             <form action="login.php" method="post">
-                    <paper-input-decorator label="Username" floatingLabel class="input">
-                    <input type="Text" name="username">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Passwort" floatingLabel class="input">
-                   <input type="Password" name="password">
-                   </paper-input-decorator>
-                    <button type="submit" is="paper-button-submit">Login</button><br><br>
-                </form>
-        </div>
-    </div>
--->
-<!--    <div class="register">
-        <div class="handle" onclick="toggleClass(register)">Registrieren</div>
-        <div class="hidden" id="register">
-            <form action="register.php" method="post">
-                <paper-input-decorator label="Username" class="input" floatingLabel>
-                <input type="Text" name="username">
-                </paper-input-decorator>
-                <paper-input-decorator label="Passwort" class="input" floatingLabel>
-                <input type="Password" name="password">
-                </paper-input-decorator>
-                <paper-input-decorator label="Passwort wiederholen" class="input" floatingLabel>
-                <input type="Password" name="password2">
-                </paper-input-decorator>
-                <button type="submit" is="paper-button-submit">Registrieren</button><br><br>
-            </form>
-        </div>
-    </div>
 </div>
--->
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tempora debitis quisquam eius illo quis, neque quibusdam necessitatibus totam! Eaque, alias explicabo recusandae architecto ratione quam repellat rem, impedit. Ratione!</p>
-
 <div id="footer">
     <div id="logofooter"></div>
 
@@ -152,7 +99,6 @@ if (isset($_SESSION['user'])){
         </nav>
         <p id="copyright">All Content copyright 2014</p>
     </div>
-</div>
 </div>
 </div>
 </div>
