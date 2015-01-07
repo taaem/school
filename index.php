@@ -42,6 +42,7 @@ if (isset($_SESSION['user'])){
     <div id="logo"></div>
     <nav id="shopnav">
         <ul>
+            <li><a href="index.php"><img id="logo" src="pictures/unicornlogo.png"></a></li>
             <li><a href="#" id="shop">Unicorns</a></li>
             <li><a href="#" id="shop">Two</a></li>
             <li><a href="#" id="shop">Three</a></li>

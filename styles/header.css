@@ -21,6 +21,7 @@
     border: solid;
     border-color: white;
     border-width: 10px;
+    border-radius: 10px;
     clear: both;
 }
 
@@ -50,6 +51,7 @@
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+    -webkit-padding-start: 0px;
 }
 
 #shopnav ul li{
@@ -71,11 +73,21 @@
 
 #shopnav ul li:hover{
     color: black;
-    background-color: white;
+    background-color: ;
 }
 .loggedin{
     display: none;
 }
 .loggedout{
     display: none;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    padding: 0px 0px 0px 0px;
+}
+#logo:hover{
+    background-color: #EE006E;
+}
+#shopnav ul:first-child{
 }
