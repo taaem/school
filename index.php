@@ -9,6 +9,9 @@ if (isset($_SESSION['user'])){
     $classname = "";
     $userclass = "loggedout";
 }
+$rowsquery = mysqli_query($conn, "SELECT COUNT(*) FROM `products`");
+$num_rows = mysqli_fetch_array($rowsquery);
+
 function product($name='', $desc='', $price='')
 {
 ?>
@@ -88,7 +91,8 @@ function product($name='', $desc='', $price='')
 
 <div class="content">
 <?php
- for ($i=1; $i < 3; $i++) {
+ $rows = $num_rows['COUNT(*)'] + 1;
+ for ($i=1; $i < $rows; $i++) {
     $query= "SELECT * FROM products WHERE id = '" . $i . "'";
     $sql = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($sql);
