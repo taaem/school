@@ -1,0 +1,38 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="paper-button-submit.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/core-input/core-input.html">
+<polymer-element name="reg-form" extends="form" noscript>
+  <template>
+  <style>
+    .button{
+        height: 20px;
+        width: 100%;
+    }
+    .input{
+        text-align: left;
+        margin: 0 auto;
+        width: 90%;
+    }
+    paper-input-decorator /deep/ .floating-label .label-text {
+        color: orange;
+        background-color: green;
+    }
+    paper-input-decorator /deep/ .focused-underline {
+        background-color: #cccccc;
+    }
+  </style>
+  <form action="../register.php" method="POST">
+      <paper-input-decorator label="Username" class="input" floatingLabel>
+        <input type="Text" name="username">
+      </paper-input-decorator>
+      <paper-input-decorator label="Passwort" id="pass1" class="input" floatingLabel isInvaslid="{{!$.pass2.validity.valid}}">
+        <input type="Password" name="password" id="input1" is="core-input">
+      </paper-input-decorator>
+      <paper-input-decorator label="Passwort wiederholen" id="pass2" class="input" floatingLabel>
+        <input type="Password" name="password2" id="input2" is="core-input">
+      </paper-input-decorator>
+      <button type="submit" is="paper-button-submit">Registrieren</button><br><br>
+    </template>
+</polymer-element>

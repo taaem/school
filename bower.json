@@ -1,0 +1,17 @@
+{
+  "name": "school",
+  "version": "0.0.0",
+  "homepage": "https://github.com/taaem/school",
+  "authors": [
+    "taaem <hipsteeeer@web.de>"
+  ],
+  "description": "school project",
+  "main": "index.php",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "paper-button": "Polymer/paper-button#~0.5.2",
+    "paper-input": "Polymer/paper-input#~0.5.2",
+    "core-component-page": "Polymer/core-component-page#~0.5.4"
+  }
+}

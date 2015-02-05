@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="paper-button-submit.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<polymer-element name="log-form" extends="form" noscript>
+  <template>
+  <style>
+    .button{
+        height: 20px;
+        width: 100%;
+    }
+    .input{
+        text-align: left;
+        margin: 0 auto;
+        width: 90%;
+    }
+    paper-input-decorator /deep/ .floating-label .label-text {
+        color: orange;
+        background-color: green;
+    }
+    paper-input-decorator /deep/ .focused-underline {
+        background-color: #cccccc;
+    }
+  </style>
+   <form action="../login.php" method="post">
+      <paper-input-decorator label="Username" floatingLabel class="input">
+        <input type="Text" name="username">
+      </paper-input-decorator>
+      <paper-input-decorator label="Passwort" floatingLabel class="input">
+        <input type="Password" name="password">
+      </paper-input-decorator>
+      <button type="submit" is="paper-button-submit">Login</button><br><br>
+    </form>
+  </template>
+</polymer-element>

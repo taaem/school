@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
+<polymer-element name="shop-elements" noscript>
+  <template>
+  <link rel="stylesheet" type="text/css" href="shop-elements.css">
+  <paper-shadow z="5">
+  <div id="wrapper">
+    <div>
+      <content class="img" select=".product"></content>
+    </div>
+    <div>
+      <content select="p"></content>
+    </div>
+    <div>
+      <content select="h6"></content>
+    </div>
+    <div>
+      <paper-button>Buy</paper-button>
+    </div>
+  </div>
+  </paper-shadow>
+  </template>
+</polymer-element>
